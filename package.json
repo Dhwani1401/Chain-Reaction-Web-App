@@ -1,34 +1,14 @@
 {
-  "name": "chain-reaction-multi",
+  "name": "chainreaction",
   "version": "1.0.0",
-  "description": "a multiplayer chain reaction game, made using socket-io",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss client/styles.scss client/styles.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "start-watch": "concurrently --kill-others \"npm run watch-css\" \"nodemon .\\script.js\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Harshit-1104/Chain-Reaction-Multi.git"
-  },
-  "keywords": [
-    "chain",
-    "reaction"
-  ],
-  "author": "MiHarsh and Harshit Gupta",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Harshit-1104/Chain-Reaction-Multi/issues"
-  },
-  "homepage": "https://github.com/Harshit-1104/Chain-Reaction-Multi#readme",
+  "description": "chainreaction game",
   "dependencies": {
-    "express": "^4.17.1",
-    "socketio": "^1.0.0"
+    "websocket": "^1.0.23",
+	"express":"4.13.3"
   },
-  "devDependencies": {
-    "concurrently": "^6.3.0",
-    "node-sass": "^6.0.1"
-  }
+  "scripts": {
+    "start": "node chserver.js"
+  },
+  "author": "Dhwani Singh",
+  "license": "ISC"
 }
